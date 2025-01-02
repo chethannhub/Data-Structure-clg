@@ -29,14 +29,14 @@ void dequeue() {
     } else {
         printf("%d dequeued from circular queue\n", circularQueue[front]);
         if (front == rear) {
-            front = rear = -1; // Reset the queue when it becomes empty
+            front = rear = -1; 
         } else {
             front = (front + 1) % SIZE;
         }
     }
 }
 
-// Function to display the circular queue
+
 void displayQueue() {
     if (isEmpty()) {
         printf("Circular Queue is empty\n");
